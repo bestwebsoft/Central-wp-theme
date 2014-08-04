@@ -226,7 +226,7 @@
 			.append('<div class="sel-styled-cont-open"></div>')
 			.each( function() {
 				var id = $( 'html' ).attr( 'id' );
-				$( this ).mouseenter( function() {
+				$( this ).click( function() {
 					$( this ).addClass( 'out-shadow' );
 					if ( id == 'ie7' || id == 'ie8' ) { /* animation effects for select in ie when select in focus or blur */
 						$( this ).css( { top: '0px',
@@ -243,13 +243,16 @@
 												left: '1px'
 						});
 					}
-					$( this ).children( '.sel-styled-cont-open' ).slideToggle( 300 ); 
+					$( this ).children( '.sel-styled-cont-open' ).slideToggle( 100 ); 
 					/* set values from dropdawn menu inem to select main field */
 					$( this ).children( '.sel-styled-cont-open' ).children( '.sel-styled-opt' ).click( function() {
 						$( this ).parent().parent().children( '.sel-styled-text' ).text( $( this ).text() );
 						$( this ).parent().parent().children( '.sel-styled' ).val( $( this ).text() );
+						$( this ).parent().parent().children( 'select' ).find( 'option' ).removeAttr( 'selected' );
+						$( this ).parent().parent().children( 'select' ).find( 'option' ).eq( $( this ).index() ).attr( 'selected', 'selected' ).trigger( 'change' );
 					});
-				}).mouseleave( function() {
+				});
+				$( this ).children().click( function() {
 					$( this ).removeClass( 'out-shadow' );
 						if ( id == 'ie7' || id == 'ie8' ) {
 							$( this ).css( { top: '5px',
@@ -266,19 +269,25 @@
 													left: '-4px'
 							});
 						}
-					$( this ).children( '.sel-styled-cont-open' ).slideToggle( 300 );
+					$( this ).children( '.sel-styled-cont-open' ).slideToggle( 100 );
 				});
 			});  
 		$( 'select' ).each( function() { /* script for child elements of script */
-						$( this ).parent().append( '<span class="sel-styled-text">' + $( this ).val() + '</span>' ); 
-					}).children( 'option' ).each( function() {
-						if ( $ ( this ).attr( 'disabled' ) ) {
-							$( this ).parent().parent().children( '.sel-styled-cont-open' ).append( '<div class="sel-styled-opt-dis">' + 	$( this ).text() + '</div>' );
-						} else {
-							$( this ).parent().parent().children( '.sel-styled-cont-open' ).append( '<div class="sel-styled-opt">' + $( this ).text() + '</div>' );
-						}
-					}).children( 'optgroup' ).each( function() {
-						$( this ).parent().parent().children( '.sel-styled-cont-open' ).append( '<div class="sel-styled-opt-dis">' + $( this ).text() + '</div>' );
+			if ( $( this ).find( 'option[selected]' ).length > 0 ) {
+				$( this ).parent().append( '<span class="sel-styled-text">' + $( this ).find( 'option[selected]' ).text() + '</span>' ); 
+			} else {
+				$( this ).parent().append( '<span class="sel-styled-text">' + $( this ).find( 'option:first' ).text() + '</span>' ); 
+			}
+		});
+		$( 'select' ).children( 'option' ).each( function() {
+			if ( $ ( this ).attr( 'disabled' ) ) {
+				$( this ).parent().parent().children( '.sel-styled-cont-open' ).append( '<div class="sel-styled-opt-dis">' + 	$( this ).text() + '</div>' );
+			} else {
+				$( this ).parent().parent().children( '.sel-styled-cont-open' ).append( '<div class="sel-styled-opt">' + $( this ).text() + '</div>' );
+			}
+		});
+		$( 'select' ).children( 'optgroup' ).each( function() {
+			$( this ).parent().parent().children( '.sel-styled-cont-open' ).append( '<div class="sel-styled-opt-dis">' + $( this ).text() + '</div>' );
 		}); 
 
 		/*
@@ -357,11 +366,9 @@
 		* reset button script
 		*/
 		$( 'input:reset' ).click( function() {
-			$( 'option' ).each( function() { 
-				if ( $( this ).centralHassAttr( 'selected' ) )
-					$( '.sel-styled-text' ).text( $( this ).text() );  
-				else 
-					$( '.sel-styled-text' ).text( $( '.sel-styled-opt:first' ).text() );
+			$( 'select' ).each( function() { 
+				$( this ).children( 'option' ).removeAttr( 'selected' );
+				$( this ).parent().find( '.sel-styled-text' ).text( $( this ).children( 'option:first' ).text() );
 			});
 			$( 'input:radio' ).each( function() {
 				$( this ).parent().removeClass( 'checked' );
@@ -398,4 +405,3 @@
 		});
 	})
 })(jQuery);
-

@@ -3,9 +3,8 @@ Theme Name: Central
 Theme URI: http://bestwebsoft.com/theme/central
 Author URI: https://github.com/bestwebsoft
 Author: the BestWebSoft team
-Description: Central Wordpress theme is simply solution to customize your website. It`s clean, simply and very powerful tool for organizing your blog or others categories of websites..
-You may change some design elements from Admin UI, like: background of page, header text-color, header background-image.
-Version: 1.0.4
+Description: If you are seeking a theme that will immerse you to the world of make-believe, we might have exactly what you've been looking for. Central is a sublime and unconventional theme, designed for dreamers - and doers all at once. This flexible theme will create an elegant bridge between your ideas and your readers, highlighting the content of your website delicately and unobtrusively. Thus, if you are a creative thinker, a photographer, for instance, who prefers to examine the world through camera lens, or a writer, who wishes their website to be an extension of their stories, Central is definitely a theme for you. Apart from that, this theme is suited for Telephone networks, Clothing Stores, News Services, Arts Agencies, News Agencies, Industry reports, News Magazine, Industry news, Media news, Reviews & opinion, Movie reviews. To see how your site will look with Central, visit http://bestwebsoft.com/wordpress_demo_theme/central/ 
+Version: 1.0.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: gray,  two-columns, left-sidebar,  fixed-width,  custom-background,  custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, sticky-post
@@ -427,6 +426,10 @@ pre {
 	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.06);
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.06);
 }
+.widget.widget_search {
+	background: transparent;
+	border: 0px solid #d9d7d5;
+}
 .widget a {
 	float: none;
 	color: #555;
@@ -440,6 +443,13 @@ pre {
 } 
 .widget div {
 	padding: 21px 20px;
+	color: #555;
+}
+.widget .sel-styled-cont div {
+	padding: 0;
+}
+.widget.widget_search div {
+	padding: 0;
 	color: #555;
 }
 .widget h3 {
@@ -719,9 +729,15 @@ pre {
 	color: #555;
 	cursor: pointer;
 }
+#commentform table label,
+.post form table label {
+	font-size: 1em;
+}
 #commentform input[type="text"],
+#commentform  input[type="email"],
 .post input[type="text"],
-.post input[type="password"]{
+.post input[type="password"],
+.post input[type="email"] {
 	position: relative;
 	width: 210px;
 	height: 47px;
@@ -1053,6 +1069,16 @@ pre {
 	-moz-box-shadow: inset 1px 0 5px rgba(0,0,0,0.05);
 	box-shadow: inset 1px 0 5px rgba(0,0,0,0.05);
 	cursor: pointer;
+} 
+table .sel-styled-cont {
+	font-size: 1em;
+}
+.widget .sel-styled-cont {
+	float: inherit;
+	width: 208px;
+	height: 44px;
+	margin: 5px 5px 5px;
+	padding: 0px;
 } 
 .sel-styled {
 	height: 0;
