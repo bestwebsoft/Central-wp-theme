@@ -5,12 +5,12 @@ Central Wordpress theme is simply solution to customize your website. Its clean,
 
 <img src="http://bestwebsoft.com/wp-content/uploads/2013/09/central-banner-wp.jpg" />
 
-<a href="http://bestwebsoft.com/theme/central/#description" target=_blank>Description</a> | 
-<a href="http://bestwebsoft.com/theme/central/#installation" target=_blank>Installation</a> | 
-<a href="http://bestwebsoft.com/theme/central/#faq" target=_blank>FAQ</a> | 
-<a href="http://bestwebsoft.com/theme/central/#screenshots" target=_blank>Screenshots</a> | 
-<a href="http://bestwebsoft.com/theme/central/#changelog" target=_blank>Changelog</a> | 
-<a href="http://bestwebsoft.com/theme/central/#download" target=_blank>Download</a>
+<a href="http://bestwebsoft.com/products/central/description" target=_blank>Description</a> | 
+<a href="http://bestwebsoft.com/products/central/installation" target=_blank>Installation</a> | 
+<a href="http://bestwebsoft.com/products/central/faq" target=_blank>FAQ</a> | 
+<a href="http://bestwebsoft.com/products/central/screenshots" target=_blank>Screenshots</a> | 
+<a href="http://bestwebsoft.com/products/central/changelog" target=_blank>Changelog</a> | 
+<a href="http://bestwebsoft.com/products/central/download" target=_blank>Download</a>
 
 Translation
 -----------------------------
