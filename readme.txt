@@ -1,18 +1,29 @@
 === Central ===
-Contributors: the BestWebSoft team
-Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
-Tags: gray,  two-columns, left-sidebar,  fixed-width,  custom-background,  custom-header, custom-menu, editor-style, featured- image-header, featured-images, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
-Requires at least: 3.3
-Tested up to: 3.9.1
-Stable tag: 1.0.5
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Contributors: BestWebLayout, BestWebSoft
+Author URI: http://bestweblayout.com/
+Donate link: http://bestwebsoft.com/donate/
+Tags: two-columns, left-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
+Requires at least: 4.2
+Tested up to: 4.5.3
+Stable tag: 1.1
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
+Central WordPress Theme, Copyright 2016 BestWebLayout.com
+Theme Central is distributed under the terms of the GNU GPL
 
-Central Wordpress theme is a simple solution to customizing your website.
+Central WordPress theme is a simple solution to customizing your website.
 
 == Description ==
 
-If you are seeking a theme that will immerse you to the world of make-believe, we might have exactly what you've been looking for. Central is a sublime and unconventional theme, designed for dreamers - and doers all at once. This flexible theme will create an elegant bridge between your ideas and your readers, highlighting the content of your website delicately and unobtrusively. Thus, if you are a creative thinker, a photographer, for instance, who prefers to examine the world through camera lens, or a writer, who wishes their website to be an extension of their stories, Central is definitely a theme for you. Apart from that, this theme is suited for Telephone networks, Clothing Stores, News Services, Arts Agencies, News Agencies, Industry reports, News Magazine, Industry news, Media news, Reviews & opinion, Movie reviews. To see how your site will look with Central, visit http://bestwebsoft.com/wordpress_demo_theme/central/ 
+If you are seeking a theme that will immerse you to the world of make-believe, we might have exactly what you've been looking for. Central is a sublime and unconventional theme, designed for dreamers - and doers all at once. This flexible theme will create an elegant bridge between your ideas and your readers, highlighting the content of your website delicately and unobtrusively. Thus, if you are a creative thinker, a photographer, for instance, who prefers to examine the world through camera lens, or a writer, who wishes their website to be an extension of their stories, Central is definitely a theme for you. Apart from that, this theme is suited for Telephone networks, Clothing Stores, News Services, Arts Agencies, News Agencies, Industry reports, News Magazine, Industry news, Media news, Reviews & opinion, Movie reviews. To see how your site will look with Central, visit http://wp-demo-theme.bestweblayout.com/central/
+
+= Translation =
+
+* Russian (ru_RU)
+
+If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> for <a href="http://support.bestweblayout.com" target="_blank">BestWebLayout</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
+
+= Copyrights for Resources used in this theme =
 
 Copyrights for Resources used in this theme.
 1. In Central Theme, 2 External fonts from Google Webfonts were used: 
@@ -63,19 +74,44 @@ You are free to change the set of widgets as you like.
 
 == Frequently Asked Questions ==
 
-= Ask your questions =
+= How can I change the language from English into Russian? =
 
-There are no questions yet.
+Change the language in the admin settings screen. Settings > General > Site Language.
 
 == Screenshots ==
 
 1. Theme screenshot is the file screenshot.png.
 
-== Upgrade Notice ==
+== Changelog ==
+
+= V1.1 - 27.07.2016 =
+* Bugfix: Fixed mismatch coding standards.
+* Bugfix: Fixed theme markup and styles.
+* Update: Unnecessary files author.php, category.php, tag.php have been removed.
+* Update: Slider settings was moved to Customizer.
+* Update: Theme functionality was improved.
+* Update: Translation was updated.
+* Update: Screenshot was updated to size 1200x900.
+* Update: The theme has been tested for the compatibility with WordPress v.4.5.3.
+* Update: Theme was transferred to new WordPress account.
+
+= V1.0.8 - 17.08.2015 =
+* Bugfix: Sidebar function and sidebar template was fixed.
+* Bugfix: Slider function was fixed.
+* Update: Theme screenshot was updated.
+
+= V1.0.7 - 17.03.2015 =
+* Update: BWS Themes menu was removed.
+
+= V1.0.6 - 04.03.2015 =
+* Update: The following files were updated: style.css, header.php, functions.php.
+* Update: We updated functionality for WordPress 4.1.1.
+* Update: Moved the enqueued script from function file to JS file.
+* Update: Theme screenshot was updated.
 
 = V1.0.5 - 30.07.2014 =
 * New: We added central.pot file.
-* Update: We updated functionality for Wordpress 3.9.1. 
+* Update: We updated functionality for WordPress 3.9.1.
 * Update: File style.css was updated.
 * Bugfix: Bugs in script.js were fixed. 
 
@@ -94,10 +130,22 @@ There are no questions yet.
 = V1.0 - 1.08.2010 = 
 * Ability to add Central Theme to a site.
 
-== Changelog ==
+== Upgrade Notice ==
+
+= V1.1 =
+Fixed mismatch coding standards. Fixed theme markup and styles. Unnecessary files author.php, category.php, tag.php have been removed. Slider settings was moved to Customizer. Theme functionality was improved. Translation was updated. Screenshot was updated to size 1200x900. The theme has been tested for the compatibility with WordPress v.4.5.3. Theme was transferred to new WordPress account.
+
+= V1.0.8 =
+Sidebar function and sidebar template was fixed. Slider function was fixed. Theme screenshot was updated.
+
+= V1.0.7 =
+BWS Themes menu was removed.
+
+= V1.0.6 =
+We updated the theme to WordPress 4.1.1. The following files were updated: style.css, header.php, functions.php. Moved the enqueued script from function file to JS file. Theme screenshot was updated.
 
 = V1.0.5 =
-We added central.pot file. We updated functionality for Wordpress 3.9.1. Bugs in script.js were fixed. File style.css was updated.
+We added central.pot file. We updated functionality for WordPress 3.9.1. Bugs in script.js were fixed. File style.css was updated.
 
 = V1.0.4 =
 Theme positioning bug is fixed. Upgrade immediately.
